@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class CirculoComponent implements OnInit {
   radio: number = 0; 
-  resultado: number | null = null; // Variable para almacenar el resultado del cálculo
+  resultado: number | null = null;
 
   constructor() { }
 
@@ -23,9 +23,9 @@ export class CirculoComponent implements OnInit {
 
   calcularPerimetro(): void {
     if (this.radio > 0) {
-      this.resultado = 2 * Math.PI * this.radio; // Calcula y guarda el perímetro
+      this.resultado = 2 * Math.PI * this.radio;
     } else {
-      this.resultado = null; // Resetea el perímetro si el radio no es válido
+      this.resultado = null;
     }
   }
 }
