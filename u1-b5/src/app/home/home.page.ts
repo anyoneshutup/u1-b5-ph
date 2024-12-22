@@ -16,11 +16,11 @@ import { TrianguloComponent } from "../comp/triangulo/triangulo.component";
     FormsModule, CirculoComponent, TrianguloComponent],
 })
 export class HomePage {
-  figura: string = ""; // Variable para almacenar la figura seleccionada.
+  figura: string = "";
 
   constructor() {}
 
   figuraSeleccionada(event: any): void {
-    this.figura = event.detail.value; // Actualiza la figura seleccionada.
+    this.figura = event.detail.value;
   }
 }
